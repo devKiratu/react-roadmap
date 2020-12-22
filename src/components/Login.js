@@ -4,7 +4,7 @@ export default function Login(props) {
 	const { userName, setUserName, pwd, setPwd } = props;
 	return (
 		<div className="login-screen">
-			<h3>Sign in to proceed</h3>
+			<h3>Sign in to proceed : </h3>
 			<form>
 				<label htmlFor="username">Username</label>
 				<input
