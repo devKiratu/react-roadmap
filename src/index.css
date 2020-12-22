@@ -13,10 +13,65 @@ body {
 
 .login-screen {
 	width: 50%;
-	min-width: 420px;
+	min-width: 400px;
 	height: 600px;
-	border: 1px solid #999;
+	border: 0.2px solid #999;
+	border-radius: 10px;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.75);
 	margin: 0 auto;
 	box-sizing: border-box;
+	padding: 30px;
+}
+
+form {
+	margin: 50px auto;
+}
+
+form > input,
+label {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	margin: 20px auto;
+}
+
+form > input {
 	padding: 20px;
+	font-size: medium;
+	width: 80%;
+	outline: none;
+	border: 1px solid #999;
+	border-radius: 5px;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+}
+
+form > input:focus {
+	border: 2px solid cornflowerblue;
+}
+
+form > label {
+	width: 90%;
+}
+
+form > button {
+	padding: 20px;
+	width: 50%;
+	margin: 20px;
+	border: 1px solid #999;
+	border-radius: 10px;
+	font-size: large;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+	background-color: cornflowerblue;
+	color: white;
+	cursor: pointer;
+}
+
+.copyright {
+	color: red;
+	position: relative;
+	left: 55%;
+	top: 13%;
 }
