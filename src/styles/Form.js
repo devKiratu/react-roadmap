@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const LoginForm = styled.form`
-	margin: 50px auto;
+	margin: 0 auto;
+	margin-top: 50px;
 `;
 
 export const LoginFormInput = styled.input`

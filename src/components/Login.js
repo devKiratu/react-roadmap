@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { LogInScreen, CopyrightIcon } from "../styles/LogInScreen";
 import {
 	LoginForm,
@@ -8,7 +8,8 @@ import {
 } from "../styles/Form";
 
 export default function Login(props) {
-	const { userName, setUserName, pwd, setPwd } = props;
+	const [userName, setUserName] = useState("");
+	const [pwd, setPwd] = useState("");
 	return (
 		<LogInScreen>
 			<h3>Sign in to proceed : </h3>
