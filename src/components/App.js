@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { GlobalStyles } from "../styles/GlobalStyles";
 import Login from "./Login";
 
 export default function App() {
@@ -7,6 +8,7 @@ export default function App() {
 
 	return (
 		<div>
+			<GlobalStyles />
 			<Login
 				userName={userName}
 				setUserName={setUserName}
