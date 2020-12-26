@@ -10,6 +10,10 @@ export const LogInScreen = styled.div`
 	margin: 50px auto;
 	box-sizing: border-box;
 	padding: 50px 30px 30px;
+
+	/* @media (max-width: 786px) {
+		width: 400px;
+	} */
 `;
 
 export const CopyrightIcon = styled.p`
