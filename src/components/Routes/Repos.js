@@ -19,14 +19,15 @@ export default function Repos() {
 			? setError("not found")
 			: setDisplayItems(data);
 		setRepoOwner(userName);
-		console.log(data);
+		// console.log(data);
+		setUserName("");
 	}
 
 	useEffect(() => {
 		getItems();
-		console.log(displayItems);
-		setUserName("");
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
+
 	return (
 		<>
 			{error ? (
