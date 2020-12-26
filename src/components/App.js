@@ -13,9 +13,9 @@ export default function App() {
 			<GlobalStyles />
 			<Navbar />
 			<Switch>
-				<Route path="/repos" exact component={Repos} />
-				<Route path="/profile" exact component={Profile} />
 				<Route path="/" exact component={Login} />
+				<Route path="/profile" component={Profile} />
+				<Route path="/repos" component={Repos} />
 				<Route path="*" component={NotFound} />
 			</Switch>
 		</Router>

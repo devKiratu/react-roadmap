@@ -15,6 +15,6 @@ export const LogInScreen = styled.div`
 export const CopyrightIcon = styled.p`
 	color: red;
 	position: relative;
-	left: 56%;
-	top: 15%;
+	left: 55%;
+	top: 14%;
 `;
