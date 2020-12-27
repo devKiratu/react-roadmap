@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 export const LogInScreen = styled.div`
-	width: 30%;
-	min-width: 400px;
+	width: 400px;
 	height: 550px;
 	border: 0.2px solid #999;
 	border-radius: 10px;
@@ -10,15 +9,12 @@ export const LogInScreen = styled.div`
 	margin: 50px auto;
 	box-sizing: border-box;
 	padding: 50px 30px 30px;
-
-	/* @media (max-width: 786px) {
-		width: 400px;
-	} */
+	position: relative;
 `;
 
 export const CopyrightIcon = styled.p`
 	color: red;
-	position: relative;
-	left: 55%;
-	top: 14%;
+	position: absolute;
+	right: 1%;
+	bottom: 0%;
 `;

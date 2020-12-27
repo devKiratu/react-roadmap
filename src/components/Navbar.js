@@ -38,6 +38,7 @@ export default function Navbar() {
 			>
 				Profile
 			</StyledLink>
+
 			<StyledLink
 				to="/repos"
 				active={reposActive ? "active" : ""}

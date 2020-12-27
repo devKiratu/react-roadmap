@@ -1,9 +1,7 @@
 import styled, { css } from "styled-components";
 import { Link } from "react-router-dom";
 
-export const StyledNav = styled.ul`
-	min-width: 100vw;
-	box-sizing: border-box;
+export const StyledNav = styled.nav`
 	list-style: none;
 	display: flex;
 	justify-content: space-around;

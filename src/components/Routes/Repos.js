@@ -20,11 +20,11 @@ export default function Repos() {
 			: setDisplayItems(data);
 		setRepoOwner(userName);
 		// console.log(data);
-		setUserName("");
 	}
 
 	useEffect(() => {
 		getItems();
+		setUserName("");
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 
