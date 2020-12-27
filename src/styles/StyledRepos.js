@@ -5,7 +5,7 @@ export const StyledRepo = styled.div`
 	margin: 0 auto;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	gap: 2%;
+	gap: 20px;
 
 	@media (max-width: 786px) {
 		grid-template-columns: 1fr;
