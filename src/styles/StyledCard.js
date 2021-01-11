@@ -7,6 +7,7 @@ export const StyledCard = styled.div`
 	border-radius: 10px;
 	padding: 10px;
 	text-align: left;
+	background-color: #f7f7f7;
 	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.75);
 `;
 

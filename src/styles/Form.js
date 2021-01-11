@@ -54,6 +54,7 @@ export const StyledSearchForm = styled.form`
 	width: 50%;
 	min-height: 50px;
 	border-radius: 10px;
+	background-color: #f7f7f7;
 	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.75);
 `;
 export const SearchFormInput = styled.input`

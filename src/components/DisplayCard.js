@@ -13,7 +13,7 @@ export default function DisplayCard({ displayItem }) {
 			<StyledP>
 				<code>
 					<strong>Link: </strong>
-					<a href={displayItem.url}>{displayItem.url}</a>
+					<a href={displayItem.html_url}>{displayItem.html_url}</a>
 				</code>
 			</StyledP>
 		</StyledCard>
