@@ -1,5 +1,5 @@
-import styled, { css } from "styled-components";
-import { Link } from "react-router-dom";
+import styled from "styled-components";
+import { NavLink as Link } from "react-router-dom";
 
 export const StyledNav = styled.nav`
 	list-style: none;
@@ -13,13 +13,12 @@ export const StyledNav = styled.nav`
 
 export const StyledLink = styled(Link)`
 	text-decoration: none;
+	outline: none;
 	color: yellow;
 	padding-bottom: 5px;
-	${(props) =>
-		props.active &&
-		css`
-			border-bottom: 3px solid yellow;
-			transform: scale(1.05);
-			transition: ease 0.1s all;
-		`}
+	&.active {
+		border-bottom: 3px solid yellow;
+		transform: scale(1.05);
+		transition: ease 0.1s all;
+	}
 `;

@@ -1,49 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
 import { StyledNav, StyledLink } from "../styles/StyledNav";
 
 export default function Navbar() {
-	const [loginActive, setLoginActive] = useState(true);
-	const [profileActive, setProfileActive] = useState(false);
-	const [reposActive, setReposActive] = useState(false);
-
-	function activeLinkLogin() {
-		setLoginActive(true);
-		setProfileActive(false);
-		setReposActive(false);
-	}
-	function activeLinkProfile() {
-		setProfileActive(true);
-		setLoginActive(false);
-		setReposActive(false);
-	}
-	function activeLinkRepos() {
-		setReposActive(true);
-		setLoginActive(false);
-		setProfileActive(false);
-	}
-
 	return (
 		<StyledNav>
-			<StyledLink
-				to="/"
-				active={loginActive ? "active" : ""}
-				onClick={activeLinkLogin}
-			>
+			<StyledLink exact to="/" activeStyle>
 				Log in
 			</StyledLink>
-			<StyledLink
-				to="/profile"
-				active={profileActive ? "active" : ""}
-				onClick={activeLinkProfile}
-			>
+			<StyledLink to="/profile" activeStyle>
 				Profile
 			</StyledLink>
 
-			<StyledLink
-				to="/repos"
-				active={reposActive ? "active" : ""}
-				onClick={activeLinkRepos}
-			>
+			<StyledLink to="/repos" activeStyle>
 				Repos
 			</StyledLink>
 		</StyledNav>
