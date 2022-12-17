@@ -10,6 +10,10 @@ export default function Repos() {
   const [error, setError] = useState("");
   const [repoOwner, setRepoOwner] = useState("");
 
+  const handleSearch = (query) => {
+    setUserName(query);
+  };
+
   useEffect(() => {
     async function getItems() {
       const url = `https://api.github.com/users/${userName}/repos`;
@@ -34,7 +38,7 @@ export default function Repos() {
           <Title>
             Displaying public github repos for <code>{repoOwner}</code>
           </Title>
-          <SearchForm setUserName={setUserName} />
+          <SearchForm onSearch={handleSearch} />
           <StyledRepo>
             {displayItems.map((displayItem) => (
               <DisplayCard displayItem={displayItem} key={displayItem.id} />

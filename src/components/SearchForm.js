@@ -6,11 +6,11 @@ import {
   SearchFormLabel,
 } from "../styles/Form";
 
-export default function SearchForm({ setUserName }) {
+export default function SearchForm({ onSearch }) {
   const [query, setQuery] = useState("");
   function handleSubmit(e) {
     e.preventDefault();
-    setUserName(query);
+    onSearch(query);
     setQuery("");
   }
 
